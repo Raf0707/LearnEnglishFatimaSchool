@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.vocabulary.TransportActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0">
+
+            <TextView
+                android:text="English"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Russian"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:text="Car"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Машина"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:text="Bus"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Автобус"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:text="Train"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Поезд"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:text="Bicycle"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Велосипед"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:text="Subway"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Метро"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:text="Plane"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Самолёт"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:text="Boat"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Лодка"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:text="Motorcycle"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+            <TextView
+                android:text="Мотоцикл"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#333333"
+                android:background="@drawable/cell_border"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

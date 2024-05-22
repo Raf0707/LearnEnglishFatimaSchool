@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vocabularyFragment"
+        android:icon="@drawable/ic_vocabulary"
+        android:title="Vocabulary" />
+
+    <item
+        android:id="@+id/grammarFragment"
+        android:icon="@drawable/baseline_rule_24"
+        android:title="Grammar" />
+
+    <item
+        android:id="@+id/materialsFragment"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Materials" />
+
+    <item
+        android:id="@+id/appAboutFragment"
+        android:icon="@drawable/ic_vector_info"
+        android:title="About App" />
+</menu>

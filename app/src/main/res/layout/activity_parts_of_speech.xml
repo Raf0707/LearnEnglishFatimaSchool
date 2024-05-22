@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    tools:context=".ui.main.grammar.PartsOfSpeechActivity">
+
+    <!-- Part of Speech Legend -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noun"
+            android:background="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verb"
+            android:background="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adj."
+            android:background="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adverb"
+            android:background="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Conjunction -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conj."
+            android:background="#FF5722"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+        <!-- Pronoun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pronoun"
+            android:background="#9C27B0"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+
+    <!-- Sentence 1 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The quick"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fox"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jumps"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+
+
+        <!-- Conjunction -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="over"
+            android:textColor="#FF5722"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the dog."
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <!-- Sentence 2 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Pronoun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="She"
+            android:textColor="#9C27B0"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="runs"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quickly"
+            android:textColor="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Conjunction -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textColor="#FF5722"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="catch"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Article (Part of speech not listed in legend but included here) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bus."
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <!-- Sentence 3 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Article -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="big"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cat"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sleeps"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="peacefully."
+            android:textColor="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <!-- Sentence 4 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Article -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="old"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="man"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="walks"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slowly"
+            android:textColor="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <!-- Sentence 5 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Article -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bright"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sun"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shines"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="brightly"
+            android:textColor="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <!-- Sentence 6 -->
+    <GridLayout
+        android:id="@+id/gridLayoutSentence6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Article -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tall"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tree"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sways"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gently"
+            android:textColor="#FFC107"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayoutSentence7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:layout_marginBottom="8dp">
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adjective -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="old"
+            android:textColor="#2196F3"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Noun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the children"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Verb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="are playing"
+            android:textColor="#4CAF50"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+        <!-- Adverb -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in"
+            android:textColor="#FF5722"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the park"
+            android:textColor="#FF4081"
+            android:padding="8dp"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainNavFragment">
+
+    <fragment
+        android:id="@+id/mainNavFragment"
+        android:name="com.example.learnenglish.ui.navigation.NavigationFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_navigation" >
+
+        <action
+            android:id="@+id/action_mainNavFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment" />
+        <action
+            android:id="@+id/action_mainNavFragment_to_grammarFragment"
+            app:destination="@id/grammarFragment" />
+        <action
+            android:id="@+id/action_mainNavFragment_to_materialsFragment"
+            app:destination="@id/materialsFragment" />
+        <action
+            android:id="@+id/action_mainNavFragment_to_appAboutFragment"
+            app:destination="@id/appAboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grammarFragment"
+        android:name="com.example.learnenglish.ui.main.grammar.GrammarFragment"
+        android:label="GrammarFragment" />
+    <fragment
+        android:id="@+id/vocabularyFragment"
+        android:name="com.example.learnenglish.ui.main.vocabulary.VocabularyFragment"
+        android:label="VocabularyFragment" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.learnenglish.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/transportActivity"
+        android:name="com.example.learnenglish.ui.main.vocabulary.TransportActivity"
+        android:label="activity_transport"
+        tools:layout="@layout/activity_transport" />
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.example.learnenglish.ui.main.web.BooksFragment"
+        android:label="fragment_books"
+        tools:layout="@layout/fragment_books" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.learnenglish.ui.main.web.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.learnenglish.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.example.learnenglish.ui.main.web.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" />
+    <activity
+        android:id="@+id/clothesActivity"
+        android:name="com.example.learnenglish.ui.main.vocabulary.ClothesActivity"
+        android:label="activity_clothes"
+        tools:layout="@layout/activity_clothes" />
+    <activity
+        android:id="@+id/familyActivity"
+        android:name="com.example.learnenglish.ui.main.vocabulary.FamilyActivity"
+        android:label="activity_family"
+        tools:layout="@layout/activity_family" />
+    <activity
+        android:id="@+id/foodActivity"
+        android:name="com.example.learnenglish.ui.main.vocabulary.FoodActivity"
+        android:label="activity_food"
+        tools:layout="@layout/activity_food" />
+    <activity
+        android:id="@+id/logActivity"
+        android:name="com.example.learnenglish.ui.registration.LogActivity"
+        android:label="activity_log"
+        tools:layout="@layout/activity_log" />
+    <activity
+        android:id="@+id/registrationActivity"
+        android:name="com.example.learnenglish.ui.registration.RegistrationActivity"
+        android:label="activity_registration"
+        tools:layout="@layout/activity_registration" />
+    <activity
+        android:id="@+id/punctuationActivity"
+        android:name="com.example.learnenglish.ui.main.grammar.PunctuationActivity"
+        android:label="activity_punctuation"
+        tools:layout="@layout/activity_punctuation" />
+    <activity
+        android:id="@+id/signActivity"
+        android:name="com.example.learnenglish.ui.registration.SignActivity"
+        android:label="activity_sign"
+        tools:layout="@layout/activity_sign" />
+    <activity
+        android:id="@+id/partsOfSpeechActivity"
+        android:name="com.example.learnenglish.ui.main.grammar.PartsOfSpeechActivity"
+        android:label="activity_parts_of_speech"
+        tools:layout="@layout/activity_parts_of_speech" />
+    <activity
+        android:id="@+id/sentenceStructureActivity"
+        android:name="com.example.learnenglish.ui.main.grammar.SentenceStructureActivity"
+        android:label="activity_sentence_structure"
+        tools:layout="@layout/activity_sentence_structure" />
+    <activity
+        android:id="@+id/tensesActivity"
+        android:name="com.example.learnenglish.ui.main.grammar.TensesActivity"
+        android:label="activity_tenses"
+        tools:layout="@layout/activity_tenses" />
+    <fragment
+        android:id="@+id/appAboutFragment"
+        android:name="com.example.learnenglish.ui.about_app.AppAboutFragment"
+        android:label="fragment_app_about"
+        tools:layout="@layout/fragment_app_about" />
+    <fragment
+        android:id="@+id/materialsFragment"
+        android:name="com.example.learnenglish.ui.main.web.MaterialsFragment"
+        android:label="fragment_materials"
+        tools:layout="@layout/fragment_materials" >
+        <action
+            android:id="@+id/action_materialsFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_materialsFragment_to_booksFragment"
+            app:destination="@id/booksFragment" />
+        <action
+            android:id="@+id/action_materialsFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+    </fragment>
+
+</navigation>

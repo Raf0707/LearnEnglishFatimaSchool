@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Lessons">
+            <menu>
+                <item
+                    android:id="@+id/menu_vocabulary"
+                    android:icon="@drawable/ic_vocabulary"
+                    android:title="Vocabulary" />
+                <item
+                    android:id="@+id/menu_grammar"
+                    android:icon="@drawable/baseline_rule_24"
+                    android:title="Grammar" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Advanced">
+            <menu>
+                <item
+                    android:id="@+id/menu_books"
+                    android:icon="@drawable/ic_book"
+                    android:title="Books" />
+                <item
+                    android:id="@+id/menu_videos"
+                    android:icon="@drawable/ic_video"
+                    android:title="Videos" />
+                <item
+                    android:id="@+id/menu_quiz"
+                    android:icon="@drawable/baseline_quiz_24"
+                    android:title="Quiz" />
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+
+</menu>

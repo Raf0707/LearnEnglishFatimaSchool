@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.grammar.PunctuationActivity">
+
+    <!-- Text without punctuation, with placeholders -->
+    <TextView
+        android:id="@+id/textWithoutPunctuation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Once upon a time in a land far far away there lived a wise old king He had three daughters Rose Lily and Daisy One day he called them to his throne room and said I am growing old and one of you must take my place But first you must prove your wisdom and courage"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Draggable punctuation marks -->
+    <LinearLayout
+        android:id="@+id/punctuationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textWithoutPunctuation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Punctuation TextViews -->
+        <TextView
+            android:id="@+id/punctuation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=","
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/punctuation12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/punctuationContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
