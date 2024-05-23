@@ -28,26 +28,6 @@
             android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Sentence Structure Card -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/sentence_structure_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        app:cardBackgroundColor="#2196F3"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Sentence Structure"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
-
     <!-- Tenses Card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/tenses_card"
@@ -81,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Punctuation"
+            android:text="Irregular Verbs"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold" />

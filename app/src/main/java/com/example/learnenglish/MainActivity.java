@@ -3,6 +3,7 @@ package com.example.learnenglish;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -47,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
         binding.toolbar.setTitle("Vocabulary");
         binding.toolbar.setTitleTextColor(Color.WHITE);
         binding.toolbar.getNavigationIcon().setTint(Color.WHITE);
+
+        if (navController.getCurrentDestination().getId() == R.id.about_app) {
+            binding.toolbar.setVisibility(View.GONE);
+        } else {
+            binding.toolbar.setVisibility(View.VISIBLE);
+        }
 
         /*binding.navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -4,4 +4,35 @@
     <string name="close">close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version">Версия: 1.0.0.0</string>
+    <string name="source_code">Исходный код</string>
+    <string name="learn_english">Learn English</string>
+    <string name="from_tabiin">from Tabiin</string>
+    <string name="fatima_name">Fatima (your full name, change in strings.xml)</string>
+    <string name="fatima_email">your e-mail (change in strings.xml)</string>
+    <string name="str_dv">\: \</string>
+    <string name="val_str_sk_right">\ ( \</string>
+    <string name="val_str_sk_left">\) \</string>
+    <string name="link_to_source_copied">link to source copied</string>
+    <string name="fatima_git_copylink">link to Fatima\'s GitHub profile copied</string>
+    <string name="my_email_copylink">Rafail Kikmatulin\'s email copied</string>
+    <string name="vk_tabiin_coyplink">VK-Group\'s "Tabiin" link copied</string>
+    <string name="tg_tabiin_coyplink">Telegram-Group\'s "Tabiin Android-Development" link copied</string>
+    <string name="text_plain">text/plain</string>
+    <string name="email_client">Send email using...</string>
+    <string name="no_email_client">No email clients installed.</string>
+    <string name="semicolon">\; \</string>
+    <string name="report_a_bug">Report a bug</string>
+    <string name="bug_report" translatable="false">Bug Report</string>
+    <string name="not_installed_email_client">E-mail client not installed</string>
+    <string name="Gradle_build">\Gradle build finished in \</string>
+    <string name="Apply_changes">Changes Apply Sucscessfully!</string>
+    <string name="Debug_finish">\Android App Tabiin finished  Debug in \</string>
+    <string name="Milly_sec">\ ms\</string>
+    <string name="rateApp">https://apps.rustore.ru/app/ru.tabiin.alistigfar</string>
+    <string name="version_copied">version copied</string>
+    <string name="getContext">getContext()</string>
+    <string name="mailto">mailto:</string>
+    <string name="learn_english_str_Version">1.0.0.0</string>
+    <string name="fatima_url">https://github.com/Fatiprogramist</string>
 </resources>
