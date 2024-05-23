@@ -9,7 +9,7 @@
         android:id="@+id/mainNavFragment"
         android:name="com.example.learnenglish.ui.navigation.NavigationFragment"
         android:label="Главная"
-        tools:layout="@layout/fragment_navigation" >
+        tools:layout="@layout/fragment_navigation">
 
         <action
             android:id="@+id/action_mainNavFragment_to_vocabularyFragment"
@@ -34,25 +34,10 @@
         android:label="Main"
         tools:layout="@layout/activity_main" />
     <fragment
-        android:id="@+id/booksFragment"
-        android:name="com.example.learnenglish.ui.main.web.BooksFragment"
-        android:label="Books"
-        tools:layout="@layout/fragment_books" />
-    <fragment
-        android:id="@+id/quizFragment"
-        android:name="com.example.learnenglish.ui.main.web.QuizFragment"
-        android:label="Quiz"
-        tools:layout="@layout/fragment_quiz" />
-    <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.learnenglish.ui.settings.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
-    <fragment
-        android:id="@+id/videosFragment"
-        android:name="com.example.learnenglish.ui.main.web.VideosFragment"
-        android:label="Videos"
-        tools:layout="@layout/fragment_videos" />
     <activity
         android:id="@+id/logActivity"
         android:name="com.example.learnenglish.ui.registration.LogActivity"
@@ -92,21 +77,16 @@
         android:id="@+id/appAboutFragment"
         android:name="com.example.learnenglish.ui.about_app.AppAboutFragment"
         android:label="About App"
-        tools:layout="@layout/fragment_app_about" />
+        tools:layout="@layout/fragment_app_about" >
+        <action
+            android:id="@+id/action_appAboutFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/materialsFragment"
         android:name="com.example.learnenglish.ui.main.web.MaterialsFragment"
         android:label="Materials"
         tools:layout="@layout/fragment_materials" >
-        <action
-            android:id="@+id/action_materialsFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
-        <action
-            android:id="@+id/action_materialsFragment_to_booksFragment"
-            app:destination="@id/booksFragment" />
-        <action
-            android:id="@+id/action_materialsFragment_to_videosFragment"
-            app:destination="@id/videosFragment" />
     </fragment>
     <fragment
         android:id="@+id/vocabularyFragment"

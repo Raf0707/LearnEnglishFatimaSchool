@@ -101,7 +101,7 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ColorGreenIce" parent="Base.Theme.LearnEnglish" >
+    <style name="ColorGreenIce" parent="Base.Theme.LearnEnglish">
         <item name="android:textColor">@color/md_theme_dark_primary</item>
     </style>
 

@@ -17,14 +17,22 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
+import com.example.learnenglish.MainActivity;
 import com.example.learnenglish.R;
 import com.example.learnenglish.databinding.FragmentAppAboutBinding;
+import com.example.learnenglish.ui.settings.SettingsFragment;
 import com.example.learnenglish.utils.CustomTabUtil;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.Objects;
 
 
 public class AppAboutFragment extends Fragment {
@@ -84,13 +92,6 @@ public class AppAboutFragment extends Fragment {
             return true;
         });
 
-        binding.donateBtn.setOnLongClickListener(v -> {
-            addOnClick(v, "donate link copied",
-                    ClipData.newPlainText(getString(R.string.getContext),
-                            "https://www.donationalerts.com/YourAccaunt"));
-            return true;
-        });
-
         binding.fatimaBtn.setOnLongClickListener(v -> {
             addOnClick(v, getString(R.string.fatima_git_copylink),
                     ClipData.newPlainText(getString(R.string.getContext),
@@ -105,31 +106,17 @@ public class AppAboutFragment extends Fragment {
             return true;
         });
 
-        binding.rateBtn.setOnLongClickListener(v -> {
-            addOnClick(v, "RuStore link rate copied",
-                    ClipData.newPlainText("your link in RuStore",
-                            "your link in RuStore"));
-            return true;
-        });
-
         binding.vkGroupBtn.setOnLongClickListener(v -> {
             addOnClick(v, getString(R.string.vk_tabiin_coyplink),
                     ClipData.newPlainText(getString(R.string.getContext),
-                            getString(Integer.parseInt("your vk-group"))));
+                            "https://vk.com/club226009764"));
             return true;
         });
 
         binding.tgGroupBtn.setOnLongClickListener(v -> {
             addOnClick(v, getString(R.string.tg_tabiin_coyplink),
                     ClipData.newPlainText(getString(R.string.getContext),
-                            getString(Integer.parseInt("yout telegram-group"))));
-            return true;
-        });
-
-        binding.otherAppsBtn.setOnLongClickListener(v -> {
-            addOnClick(v, "Fatima's Apps link copied",
-                    ClipData.newPlainText(getString(R.string.getContext),
-                            "Your RuStore Link"));
+                            "https://t.me/+uEQMmjF_3cUzMmFi"));
             return true;
         });
 
@@ -171,51 +158,27 @@ public class AppAboutFragment extends Fragment {
             }
         });
 
-
-
-        binding.rateBtn.setOnClickListener(v -> new CustomTabUtil()
-                .openCustomTab(getActivity(),
-                        "your RuStore-Link",
-                        R.color.purple_300));
-
-
         binding.vkGroupBtn.setOnClickListener(v -> new CustomTabUtil()
                 .openCustomTab(getActivity(),
-                        getString(Integer.parseInt("your vk group")),
+                        "https://vk.com/club226009764",
                         R.color.purple_300));
 
-        binding.otherAppsBtn.setOnClickListener(v -> {
-            String url = "your RuStoreLink";
-            Uri uri = Uri.parse(url);
-
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            intent.setPackage("com.android.chrome"); // замените на пакет вашего предпочитаемого браузера, если это не Chrome
-
-            try {
-                startActivity(intent);
-            } catch (ActivityNotFoundException e) {
-                // Если браузер не найден, откройте ссылку в стандартном браузере
-                intent.setPackage(null);
-                startActivity(intent);
-            }
-        });
-
         binding.settingsBtn.setOnClickListener(v -> {
+            // Ваш фрагмент или активность
+            NavController navController = Navigation.findNavController(requireView());
+            NavigationUI.setupActionBarWithNavController((AppCompatActivity) requireActivity(), navController);
 
+            navController.navigate(R.id.settingsFragment);
         });
-
-        binding.donateBtn.setOnClickListener(v -> new CustomTabUtil().openCustomTab(getActivity(),
-                "https://www.donationalerts.com/yourAccaunt", R.color.md_theme_light_onSecondary));
 
         binding.tgGroupBtn.setOnClickListener(v -> new CustomTabUtil()
-                .openCustomTab(getActivity(), "your telegram group",
+                .openCustomTab(getActivity(), "https://t.me/+uEQMmjF_3cUzMmFi",
                         R.color.md_theme_light_onSecondary));
 
         binding.tgGroupBtn.setOnLongClickListener(v -> {
             addOnClick(v, getString(R.string.tg_tabiin_coyplink),
                     ClipData.newPlainText(getString(R.string.getContext),
-                            getString(Integer.parseInt("your telegram group"))));
+                            "https://t.me/+uEQMmjF_3cUzMmFi"));
             return true;
         });
 

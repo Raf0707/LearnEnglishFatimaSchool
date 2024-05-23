@@ -50,7 +50,7 @@
 
     <!-- Punctuation Card -->
     <androidx.cardview.widget.CardView
-        android:id="@+id/punctuation_card"
+        android:id="@+id/ir_verb_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#FF5722"

@@ -4,10 +4,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,10 +18,9 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.learnenglish.databinding.ActivityMainBinding;
 import com.example.learnenglish.ui.main.grammar.GrammarFragment;
 import com.example.learnenglish.ui.main.vocabulary.VocabularyFragment;
-import com.example.learnenglish.ui.main.web.BooksFragment;
-import com.example.learnenglish.ui.main.web.QuizFragment;
-import com.example.learnenglish.ui.main.web.VideosFragment;
 import com.example.learnenglish.ui.settings.SettingsFragment;
+import com.example.learnenglish.utils.SharedPreferencesUtils;
+import com.google.android.material.color.DynamicColors;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        if (SharedPreferencesUtils.getBoolean(this, "useDynamicColors"))
+            DynamicColors.applyToActivityIfAvailable(this);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -44,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupWithNavController(binding.navView, navController);
         NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration);
-        navController.navigate(R.id.vocabularyFragment);
+        if (savedInstanceState == null) {
+            navController.navigate(R.id.vocabularyFragment);
+        }
+
         binding.toolbar.setTitle("Vocabulary");
         binding.toolbar.setTitleTextColor(Color.WHITE);
         binding.toolbar.getNavigationIcon().setTint(Color.WHITE);

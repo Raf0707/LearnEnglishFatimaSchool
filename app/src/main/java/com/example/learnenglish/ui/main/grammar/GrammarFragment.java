@@ -45,7 +45,7 @@ public class GrammarFragment extends Fragment {
 
         CardView partsOfSpeechCard = view.findViewById(R.id.parts_of_speech_card);
         CardView tensesCard = view.findViewById(R.id.tenses_card);
-        CardView punctuationCard = view.findViewById(R.id.punctuation_card);
+        CardView irVerbCard = view.findViewById(R.id.ir_verb_card);
 
         partsOfSpeechCard.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), PartsOfSpeechActivity.class);
@@ -57,8 +57,8 @@ public class GrammarFragment extends Fragment {
             startActivity(intent);
         });
 
-        punctuationCard.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), PunctuationActivity.class);
+        irVerbCard.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), IrregularVerbsActivity.class);
             startActivity(intent);
         });
 

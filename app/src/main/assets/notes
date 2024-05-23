@@ -1,7 +1,5 @@
 task:
-1. AppAboutFragment - добавить свою информацию
-2. Раздел Grammar: Parts of Speech, Irregular Verbs
-3. Books: picture + title + download_link
-4. Videos: picture + title + youtube_link
-5. Quiz
-
+1. AppAboutFragment - добавить свою информацию, create SettingsFragment
+2. Раздел Grammar: Parts of Speech, Irregular Verbs - DONE!
+3. Books: picture + title + download_link - DONE!
+4. Videos: picture + title + youtube_link - DONE!
