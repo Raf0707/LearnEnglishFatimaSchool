@@ -23,6 +23,7 @@ public class InfoTensesActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         String tenseName = getIntent().getStringExtra("tense");
+        //int position = getIntent().getIntExtra("pos", 0);
 
         switch (tenseName) {
             case "Present Simple":
@@ -38,6 +39,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "They live in New York. \n (Они живут в Нью-Йорке.)\n" +
                         "He does not play tennis. \n (Он не играет в теннис.)\n" +
                         "Do you like pizza? \n (Ты любишь пиццу?)");
+                break;
 
             case "Present Continuous":
                 binding.titleTense.setText("Present Continuous (настоящее продолженное время)");
@@ -52,6 +54,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "They are watching TV at the moment. \n(Они сейчас смотрят телевизор.)\n" +
                         "He is not sleeping. \n(Он не спит.)\n" +
                         "Is she cooking dinner? \n(Она готовит ужин?)");
+                break;
 
             case "Present Perfect":
                 binding.titleTense.setText("Present Perfect (настоящее совершенное время)");
@@ -67,6 +70,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He has already eaten lunch. \n(Он уже пообедал.)\n" +
                         "Have you ever been to London? \n(Ты когда-нибудь был в Лондоне?)\n");
 
+                break;
             case "Present Perfect Continuous":
                 binding.titleTense.setText("Present Perfect Continuous (настоящее совершенное длительное время)");
                 binding.descriptTense.setText("Описание: Настоящее совершенное длительное время используется для описания действий, которые начались в прошлом и продолжаются в настоящем, или для выражения длительных действий, которые только что завершились.");
@@ -81,6 +85,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He has been working in the garden all morning. \n(Он работает в саду всё утро.)\n" +
                         "Have you been watching TV since morning? \n(Ты смотришь телевизор с утра?)");
 
+                break;
             case "Past Simple":
                 binding.titleTense.setText("Past Simple (прошедшее простое время)");
                 binding.descriptTense.setText("Описание: Прошедшее простое время используется для описания действий, которые произошли в определенный момент в прошлом.");
@@ -95,6 +100,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He played football when he was a child. \n(Он играл в футбол, когда был ребенком.)\n" +
                         "Did you finish your homework? \n(Ты закончил свою домашнюю работу?)");
 
+                break;
             case "Past Continuous":
                 binding.titleTense.setText("Past Continuous (прошедшее продолженное время)");
                 binding.descriptTense.setText("Описание: Прошедшее продолженное время используется для описания действий, которые происходили в определенный момент в прошлом.");
@@ -109,6 +115,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He was sleeping when the phone rang. \n(Он спал, когда зазвонил телефон.)\n" +
                         "Were you studying English at this time yesterday? \n(Ты учил английский в это время вчера?)\n");
 
+                break;
             case "Past Perfect":
                 binding.titleTense.setText("Past Perfect (прошедшее совершенное время)");
                 binding.descriptTense.setText("Описание: Прошедшее совершенное время используется для описания действия, которое произошло до определенного момента в прошлом.");
@@ -123,6 +130,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He had already left when I got there. \n(Он уже ушел, когда я пришел туда.)\n" +
                         "Had you ever been to Paris before your last trip? \n(Ты когда-либо был в Париже до своей последней поездки?)\n");
 
+                break;
             case "Past Perfect Continuous":
                 binding.titleTense.setText("Past Perfect Continuous (прошедшее совершенное длительное время)");
                 binding.descriptTense.setText("Описание: Прошедшее совершенное длительное время используется для описания длительных действий, которые происходили до определенного момента в прошлом и продолжались в течение некоторого времени.");
@@ -137,6 +145,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He had been studying English for six months before he took the exam. \n(Он учил английский шесть месяцев, прежде чем сдать экзамен.)\n" +
                         "Had you been practicing piano before you gave that performance? \n(Ты практиковал игру на пианино, прежде чем дать это выступление?)");
 
+                break;
             case "Future Simple":
                 binding.titleTense.setText("Future Simple (будущее простое время)");
                 binding.descriptTense.setText("Описание: Будущее простое время используется для выражения действий, которые произойдут в будущем и не зависят от других обстоятельств.");
@@ -151,6 +160,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He will call you when he arrives. \n(Он позвонит тебе, когда приедет.)\n" +
                         "Will you go to the cinema with me tomorrow? \n(Ты пойдешь со мной в кино завтра?)\n");
 
+                break;
             case "Future Continuous":
                 binding.titleTense.setText("Future Continuous (будущее продолженное время)");
                 binding.descriptTense.setText("Описание: Будущее продолженное время используется для выражения действий, которые будут происходить в определенный момент в будущем и будут продолжаться в течение какого-то времени.\n");
@@ -165,6 +175,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He will be working late tonight. \n(Он будет работать поздно сегодня вечером.)\n" +
                         "Will you be watching the football match tomorrow evening? \n(Ты будешь смотреть футбольный матч завтра вечером?)");
 
+                break;
             case "Future Perfect":
                 binding.titleTense.setText("Future Perfect (будущее совершенное время)");
                 binding.descriptTense.setText("Описание: Будущее совершенное время используется для описания действия, которое будет завершено к определенному моменту в будущем.");
@@ -180,6 +191,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He will have completed the project by the end of the month. \n(Он завершит проект к концу месяца.)\n" +
                         "Will you have graduated from university by next year? \n(Ты закончишь университет к следующему году?)");
 
+                break;
             case "Future Perfect Continuous":
                 binding.titleTense.setText("Future Perfect Continuous (будущее совершенное продолженное время)");
                 binding.descriptTense.setText("Описание: Будущее совершенное продолженное время используется для описания длительного действия, которое начнется до определенного момента в будущем и будет продолжаться в течение некоторого времени.");
@@ -194,6 +206,7 @@ public class InfoTensesActivity extends AppCompatActivity {
                         "He will have been working on the project for three months by next week. \n(Он будет работать над проектом три месяца к следующей неделе.)\n" +
                         "Will you have been living here for a year by the end of the month? \n(Ты будешь жить здесь год к концу месяца?)");
 
+                break;
 
         }
     }

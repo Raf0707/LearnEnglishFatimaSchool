@@ -140,13 +140,13 @@ public class TensesActivity extends AppCompatActivity {
             View itemView = binding.tensesContainer.getChildAt(i);
             if (itemView instanceof MaterialCardView) {
                 MaterialCardView cardView = (MaterialCardView) itemView;
-                final int position = i;
+                int position = i;
                 cardView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         String tenseName = tenseList.get(position).getTitle();
                         navigateToInfoTensesActivity(tenseName);
-                        //Snackbar.make(binding.getRoot(), tenseName, Snackbar.LENGTH_SHORT).show();
+                        //Snackbar.make(binding.getRoot(), position+"", Snackbar.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -158,6 +158,12 @@ public class TensesActivity extends AppCompatActivity {
     private void navigateToInfoTensesActivity(String tenseName) {
         Intent intent = new Intent(this, InfoTensesActivity.class);
         intent.putExtra("tense", tenseName);
+        startActivity(intent);
+    }
+
+    private void navigateToInfoTensesActivity(int position) {
+        Intent intent = new Intent(this, InfoTensesActivity.class);
+        intent.putExtra("pos", position);
         startActivity(intent);
     }
 
